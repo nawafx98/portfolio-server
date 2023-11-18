@@ -1,7 +1,7 @@
 Flask
 Flask-Cors
 langchain
-openai
+openai<1.0
 PyPDF2
 gunicorn
 pydantic<2.0
