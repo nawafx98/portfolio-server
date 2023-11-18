@@ -52,6 +52,6 @@ def analyze_resume():
     pdf_text = extract_text_from_pdf(resume_file)
     
     # Analyze the resume
-    analysis_output = resume_chain.run(pdf_text=pdf_text)
+    analysis_output = resume_chain.run(pdf_text)
 
     return jsonify({"analysis": analysis_output})
