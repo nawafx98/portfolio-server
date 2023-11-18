@@ -59,4 +59,4 @@ def analyze_resume():
     return jsonify({"analysis": analysis_output})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
