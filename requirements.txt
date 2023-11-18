@@ -1,5 +1,5 @@
-Flask==3.0.0
-Flask-Cors==4.0.0
-langchain==0.0.337
-openai==1.3.3
-PyPDF2==3.0.1
+Flask
+Flask-Cors
+langchain
+openai
+PyPDF2
