@@ -4,7 +4,6 @@ import PyPDF2
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain.memory import ConversationBufferMemory
 import os
 import re
 
@@ -35,8 +34,7 @@ In your analysis, refer explicitly to the resume text provided as {pdf_text}, en
     '''
  # Your resume analysis prompt template
 )
-resume_memory = ConversationBufferMemory(input_key='pdf_text', memory_key='chat_history')
-resume_chain = LLMChain(llm=llm, prompt=resume_template, verbose=True, output_key='analysis', memory=resume_memory)
+resume_chain = LLMChain(llm=llm, prompt=resume_template, verbose=True, output_key='analysis')
 
 def extract_text_from_pdf(pdf_file):
     pdf_reader = PyPDF2.PdfReader(pdf_file.stream)
