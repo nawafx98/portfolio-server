@@ -4,3 +4,4 @@ langchain
 openai
 PyPDF2
 gunicorn
+pydantic<2.0
