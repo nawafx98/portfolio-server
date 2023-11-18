@@ -3,3 +3,4 @@ Flask-Cors
 langchain
 openai
 PyPDF2
+gunicorn
