@@ -57,6 +57,3 @@ def analyze_resume():
     analysis_output = resume_chain.run(pdf_text=pdf_text)
 
     return jsonify({"analysis": analysis_output})
-
-if __name__ == "__main__":
-    app.run(debug=False)
